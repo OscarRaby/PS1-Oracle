@@ -9,6 +9,9 @@ This project provides a research and tooling framework for mapping natural langu
 - **Narrative Generation:** Use an LLM to generate a first-person SDK-style narrative about an event, citing relevant passages.
 - **Validation:** Ensure all mappings and references are consistent with the actual SDK API surface (as indexed from header files).
 
+## TODO
+- As a POC, the system currently uses hard-coded language to SDK mappings from a minimal subset of functions. Further subsets of the SDK will be included.
+
 ## Project Structure
 
 ```
@@ -88,3 +91,4 @@ For questions or contributions, please open an issue or submit a pull request.
 ---
 
 **This project bridges the gap between plain English and the technical world of PlayStation programming, making the PS1 SDK more accessible and explorable.**
+

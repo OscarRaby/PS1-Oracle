@@ -1,0 +1,29 @@
+{
+  "PadRead": {
+    "requires": ["PadGetState"]
+  },
+  "PadGetState": {
+    "requires": []
+  },
+  "ResetGraph": {
+    "requires": []
+  },
+  "SetDispMask": {
+    "requires": ["ResetGraph"]
+  },
+  "VSync": {
+    "requires": []
+  },
+  "CdControl": {
+    "requires": []
+  },
+  "CdGetError": {
+    "requires": ["CdControl"]
+  },
+  "Cdl*": {
+    "requires": ["CdGetError"]
+  },
+  "PAD_STATE_*": {
+    "requires": ["PadGetState"]
+  }
+}

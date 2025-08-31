@@ -1,0 +1,77 @@
+{
+  "lex2neutral": {
+    "spill": [
+      "instability"
+    ],
+    "pause": [
+      "attention"
+    ],
+    "halt": [
+      "attention"
+    ],
+    "break": [
+      "attention"
+    ],
+    "hold": [
+      "attention"
+    ],
+    "wait": [
+      "attention"
+    ],
+    "stop": [
+      "attention"
+    ],
+    "rest": [
+      "attention"
+    ],
+    "recess": [
+      "attention"
+    ],
+    "interval": [
+      "attention"
+    ],
+    "unstable": [
+      "instability"
+    ],
+    "shaky": [
+      "instability"
+    ],
+    "wobbly": [
+      "instability"
+    ],
+    "turbulent": [
+      "instability"
+    ],
+    "volatile": [
+      "instability"
+    ],
+    "erratic": [
+      "instability"
+    ],
+    "inconstant": [
+      "instability"
+    ],
+    "unsteady": [
+      "instability"
+    ],
+    "fault": [
+      "malfunction"
+    ]
+  },
+  "neutral2sdk": {
+    "instability": [
+      "PadGetState",
+      "PAD_STATE_*",
+      "CdGetError",
+      "Cdl*"
+    ],
+    "attention": [
+      "SetDispMask(1)",
+      "VSync(0)"
+    ],
+    "malfunction": [
+      "CdGetError",
+      "Cdl*"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "functions": ["PadInit","PadGetState","PadRead","SetDispMask","VSync","DrawSync","CdGetError","CdControl"],
+  "enums": {
+    "PAD_STATE_*": ["PAD_STATE_STABLE","PAD_STATE_UNSTABLE","PAD_STATE_DISCONN"],
+    "Cdl*": ["CdlNoErr","CdlDiskErr","CdlSeekErr","CdlDataEnd"]
+  },
+  "literals": ["SetDispMask(1)","VSync(0)"]
+}

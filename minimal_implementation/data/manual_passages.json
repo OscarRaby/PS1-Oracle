@@ -1,0 +1,44 @@
+[
+  {
+    "id": "gpu.reset.p47",
+    "tokens": ["ResetGraph"],
+    "role": "backbone",
+    "text": "ResetGraph initializes the GPU, placing it into a baseline state where subsequent drawing operations can be defined."
+  },
+  {
+    "id": "gpu.dispmask.p47",
+    "tokens": ["SetDispMask"],
+    "role": "backbone",
+    "text": "SetDispMask(1) enables the video output; without this, the display remains blank even if drawing operations are issued."
+  },
+  {
+    "id": "timing.vsync.p3",
+    "tokens": ["VSync"],
+    "role": "timing",
+    "text": "VSync synchronizes operations with the vertical blank interval, ensuring predictable pacing of frames."
+  },
+  {
+    "id": "pad.state.p12",
+    "tokens": ["PadGetState", "PAD_STATE_*"],
+    "role": "io",
+    "text": "PadGetState returns the connection status of a controller port. The PAD_STATE_* values indicate stable, unstable, or disconnected states."
+  },
+  {
+    "id": "pad.read.p13",
+    "tokens": ["PadRead"],
+    "role": "io",
+    "text": "PadRead retrieves the current button inputs from a controller if it is in a stable state."
+  },
+  {
+    "id": "cd.error.p9",
+    "tokens": ["CdGetError", "Cdl*"],
+    "role": "cdrom",
+    "text": "CdGetError queries the CD-ROM subsystem for the most recent error. The result is a Cdl* code, such as CdlNoErr, CdlDiskErr, or CdlSeekErr."
+  },
+  {
+    "id": "cd.control.p10",
+    "tokens": ["CdControl"],
+    "role": "cdrom",
+    "text": "CdControl issues a command to the CD-ROM drive, such as reading sectors, seeking, or pausing playback."
+  }
+]
